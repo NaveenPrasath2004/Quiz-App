@@ -1,0 +1,108 @@
+/* General styles for the application */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrolling */
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto; /* Allows scrolling within the app container if needed */
+}
+
+.quiz-container {
+  margin-top: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.option-label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left; /* Aligns the text to the left */
+}
+
+.text-input,
+.dropdown-select {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#login-signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-signup-container input {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#login-signup-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Ensure each question is displayed properly */
+.question p {
+  margin-bottom: 10px;
+}
+
+/* Container for each question */
+.question-container {
+  margin-bottom: 20px;
+}
+
+/* Add padding and margin for better spacing */
+.question-container {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .App {
+    width: 95%;
+  }
+
+  .text-input,
+  .dropdown-select {
+    width: 100%;
+  }
+}
